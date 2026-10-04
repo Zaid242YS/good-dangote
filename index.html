@@ -1,0 +1,895 @@
+Here is the HTML document that transforms your research report into a clean, branded business coaching page. It presents the 50 characteristics of Aliko Dangote in a structured, readable format with a professional header and footer.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking & Behaving Like Aliko Dangote · 50 Characteristics</title>
+    <!-- Google Fonts & Font Awesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+
+        .document-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -15px rgba(0, 20, 50, 0.15);
+            overflow: hidden;
+            padding: 2.5rem 2.8rem;
+            border: 1px solid #e9eef4;
+        }
+
+        /* Branding header */
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #eef2f7;
+        }
+
+        .brand-icon {
+            background: linear-gradient(135deg, #0a2e4b 0%, #1a4b6d 100%);
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.7rem;
+            box-shadow: 0 8px 16px -6px rgba(10, 46, 75, 0.3);
+        }
+
+        .brand-text h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0a2e4b;
+            line-height: 1.2;
+        }
+
+        .brand-text .subhead {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #5c6f82;
+            margin-top: 0.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .brand-text .subhead i {
+            margin-right: 0.4rem;
+            color: #2a7faa;
+        }
+
+        .coach-note {
+            background: #f0f6fe;
+            border-left: 5px solid #1a4b6d;
+            border-radius: 0 16px 16px 0;
+            padding: 1.2rem 1.8rem;
+            margin: 1.8rem 0 2.5rem;
+            font-size: 1rem;
+            color: #1e3b5a;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .coach-note i {
+            font-size: 1.6rem;
+            color: #1a4b6d;
+            margin-top: 0.1rem;
+        }
+
+        .coach-note p {
+            margin-bottom: 0.4rem;
+        }
+
+        .coach-note strong {
+            font-weight: 700;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .section-title .number-badge {
+            background: #e3eef9;
+            color: #0a2e4b;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+        }
+
+        .section-title h2 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #0a2e4b;
+            letter-spacing: -0.01em;
+        }
+
+        .characteristic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.8rem;
+            margin: 1.8rem 0 2rem;
+        }
+
+        .characteristic-card {
+            background: #ffffff;
+            border: 1px solid #e2e9f2;
+            border-radius: 20px;
+            padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+            transition: all 0.15s ease;
+            box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .characteristic-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(to bottom, #1a4b6d, #2a7faa);
+            border-radius: 20px 0 0 20px;
+            opacity: 0.85;
+        }
+
+        .characteristic-card:hover {
+            border-color: #b8cde0;
+            box-shadow: 0 15px 25px -12px rgba(10, 46, 75, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .char-number {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #2a7faa;
+            background: #e9f2fa;
+            display: inline-block;
+            padding: 0.25rem 0.9rem;
+            border-radius: 20px;
+            margin-bottom: 0.9rem;
+            align-self: flex-start;
+        }
+
+        .char-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0a2e4b;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .char-meta {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #6b7f95;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .char-meta i {
+            font-size: 0.8rem;
+            color: #2a7faa;
+        }
+
+        .char-desc {
+            font-size: 0.95rem;
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+            border-left: 2px solid #dce8f2;
+            padding-left: 1rem;
+            font-style: normal;
+        }
+
+        .application {
+            background: #f7faff;
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            margin-top: auto;
+            font-size: 0.92rem;
+            color: #1e3b5a;
+            border: 1px solid #e2ecf7;
+        }
+
+        .application strong {
+            color: #0a2e4b;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .application strong i {
+            color: #1a4b6d;
+        }
+
+        .footnote-ref {
+            font-size: 0.75rem;
+            color: #2a7faa;
+            font-weight: 600;
+            margin-left: 0.2rem;
+            vertical-align: super;
+            text-decoration: none;
+        }
+
+        .source-section {
+            margin-top: 3.5rem;
+            background: #fafcfe;
+            border-radius: 24px;
+            padding: 2rem 2rem;
+            border: 1px solid #e2e9f2;
+        }
+
+        .source-section h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0a2e4b;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .source-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 2rem;
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        .source-item {
+            flex: 1 1 280px;
+            display: flex;
+            gap: 0.6rem;
+            align-items: flex-start;
+        }
+
+        .source-item .src-num {
+            font-weight: 700;
+            color: #1a4b6d;
+            background: #e3eef9;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .source-item .src-text {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            color: #3e5a73;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: #7b8fa3;
+            border-top: 1px solid #e2e9f2;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-note i {
+            color: #2a7faa;
+            margin-right: 0.3rem;
+        }
+
+        .brand-stamp {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 600;
+            color: #0a2e4b;
+        }
+
+        .brand-stamp .mini-icon {
+            background: #0a2e4b;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .document-wrapper {
+                padding: 1.8rem 1.2rem;
+                border-radius: 24px;
+            }
+            .brand-text h1 {
+                font-size: 1.5rem;
+            }
+            .characteristic-grid {
+                grid-template-columns: 1fr;
+            }
+            .coach-note {
+                padding: 1rem 1.2rem;
+            }
+            .source-section {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-wrapper">
+        <!-- Branding header -->
+        <div class="brand-header">
+            <div class="brand-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="brand-text">
+                <h1>Thinking &amp; Behaving Like Aliko Dangote</h1>
+                <div class="subhead">
+                    <span><i class="fas fa-list-ol"></i> 50 characteristics · 10 areas</span>
+                    <span><i class="fas fa-calendar-alt"></i> Research reviewed October 3, 2026</span>
+                    <span><i class="fas fa-user-tie"></i> Prepared for Zaid Adib Ansari</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coach's note / central qualification -->
+        <div class="coach-note">
+            <i class="fas fa-lightbulb"></i>
+            <div>
+                <p><strong>Coach’s note — the central qualification.</strong> Dangote acknowledged both a wealthy family background and the contribution of luck. Capital, relationships, market timing, public policy, and execution capacity also affect outcomes. Adopt useful disciplines at an <em>affordable scale</em>; copying the size of his commitments is a different and much riskier proposition.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.4rem; color: #2c5270;"><i class="fas fa-book-open"></i> Each entry identifies its basis: <strong>Statement</strong> (his own words), <strong>Record</strong> (reported action), <strong>Corporate principle</strong> (published commitment), or <strong>Interpretation</strong> (lesson inferred). Application paragraphs are original recommendations for you, not quotations or claims about Dangote’s personal routines.</p>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 1: Mindset and discipline ========== -->
+        <div class="section-title">
+            <span class="number-badge">01</span>
+            <h2>Mindset &amp; discipline</h2>
+        </div>
+        <div class="characteristic-grid">
+            <!-- 1 -->
+            <div class="characteristic-card">
+                <span class="char-number">#1</span>
+                <div class="char-title">Deep business understanding</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He stresses knowing a business thoroughly before entering it. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Before committing money, explain the customer, production process, costs, delivery method, and likely failure points in plain language. If you cannot answer basic operating questions without relying entirely on a promoter, continue learning before committing.</div>
+            </div>
+            <!-- 2 -->
+            <div class="characteristic-card">
+                <span class="char-number">#2</span>
+                <div class="char-title">Sustained work ethic</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">Dangote identifies hard work as a contributor to his success. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Choose a repeatable work schedule that fits your energy and responsibilities. Track completed customer interviews, proposals, production tasks, or sales follow-ups. Judge effort by useful output rather than hours spent appearing busy.</div>
+            </div>
+            <!-- 3 -->
+            <div class="characteristic-card">
+                <span class="char-number">#3</span>
+                <div class="char-title">Focus on the chosen task</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">His advice includes staying focused through business difficulties. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Select one principal business objective for the next quarter. Maintain a separate list of attractive ideas so they do not constantly interrupt execution. Start another initiative only when it has a clear owner and sufficient resources.</div>
+            </div>
+            <!-- 4 -->
+            <div class="characteristic-card">
+                <span class="char-number">#4</span>
+                <div class="char-title">Persistence through setbacks</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He explicitly emphasizes tenacity when difficulties arise. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> When progress stalls, identify the specific obstacle and test a corrective action. Set a review date and an affordable loss limit. Persistence should produce new evidence or better execution, rather than repeated spending on an unchanged problem.</div>
+            </div>
+            <!-- 5 -->
+            <div class="characteristic-card">
+                <span class="char-number">#5</span>
+                <div class="char-title">Composure in leadership</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes himself as quiet and calm. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Separate urgency from aggression. In a difficult meeting, state the facts, ask for the cause, and agree on the next action. A composed response can make it easier for colleagues to report problems before those problems become expensive.</div>
+            </div>
+            <!-- 6 -->
+            <div class="characteristic-card">
+                <span class="char-number">#6</span>
+                <div class="char-title">Long investment horizons</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He advocates a long-term approach to African business. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Write a three-year direction alongside a ninety-day operating plan. Distinguish activities that generate immediate revenue from investments that improve future capability. Do not make long-term commitments without planning how the business will meet near-term obligations.</div>
+            </div>
+            <!-- 7 -->
+            <div class="characteristic-card">
+                <span class="char-number">#7</span>
+                <div class="char-title">Willingness to pursue substantial goals</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">His manufacturing philosophy explicitly embraces ambitious scale. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Define a meaningful customer outcome and estimate the resources needed to achieve it. Work backward into affordable stages. Ambition becomes useful when each stage has a deliverable, a responsible person, and a test of whether further expansion is justified.</div>
+            </div>
+            <!-- 8 -->
+            <div class="characteristic-card">
+                <span class="char-number">#8</span>
+                <div class="char-title">Attention to essential needs</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">The group identifies basic needs as its core business focus. <span class="footnote-ref">[3]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Look for problems people must solve repeatedly: food supply, maintenance, education, shelter, or reliable business services. Confirm willingness and ability to pay. A socially important need does not automatically create a commercially viable customer segment.</div>
+            </div>
+            <!-- 9 -->
+            <div class="characteristic-card">
+                <span class="char-number">#9</span>
+                <div class="char-title">Recognition of local production gaps</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">The refinery addresses the gap between crude exports and fuel imports. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Identify a product or service customers obtain from distant suppliers. Compare local delivery with the existing alternative on total cost, quality, consistency, and convenience. Local origin is a starting hypothesis; customers still need a compelling reason to switch.</div>
+            </div>
+            <!-- 10 -->
+            <div class="characteristic-card">
+                <span class="char-number">#10</span>
+                <div class="char-title">Commitment to value addition</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">Local manufacturing and value addition are stated group priorities. <span class="footnote-ref">[3]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Ask which additional processing, packaging, verification, or support service would make an offering more useful. Test whether customers pay enough for that improvement to cover its extra cost. More activity is valuable only when it improves the result or economics.</div>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 2: Strategy and growth ========== -->
+        <div class="section-title">
+            <span class="number-badge">02</span>
+            <h2>Strategy &amp; growth</h2>
+        </div>
+        <div class="characteristic-grid">
+            <!-- 11 -->
+            <div class="characteristic-card">
+                <span class="char-number">#11</span>
+                <div class="char-title">Learning from operating businesses</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes researching Brazilian factories before expanding manufacturing. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Visit comparable operations or interview experienced operators. Ask what fails, what takes longer than expected, and which expenses beginners omit. Record observations and use them to revise your assumptions before buying equipment or promising delivery dates.</div>
+            </div>
+            <!-- 12 -->
+            <div class="characteristic-card">
+                <span class="char-number">#12</span>
+                <div class="char-title">Building on existing market knowledge</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">His trading operation already had customers, warehouses, and logistics. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Use customer questions and order patterns to identify the next offering. Existing relationships can reduce uncertainty, but verify demand for the new product separately. Familiar buyers may have different requirements when you become their producer rather than their reseller.</div>
+            </div>
+            <!-- 13 -->
+            <div class="characteristic-card">
+                <span class="char-number">#13</span>
+                <div class="char-title">Moving toward greater productive ownership</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">His career developed from trading into manufacturing. <span class="footnote-ref">[3]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Map which parts of your business create durable value: intellectual property, customer relationships, equipment, or repeatable processes. Strengthen the most useful asset first. Ownership should improve service or economics, not merely satisfy a desire to control everything.</div>
+            </div>
+            <!-- 14 -->
+            <div class="characteristic-card">
+                <span class="char-number">#14</span>
+                <div class="char-title">Expanding into connected activities</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">His historical business expansion included complementary products and packaging. <span class="footnote-ref">[5]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Consider additions that serve existing customers or share proven capabilities. For an educational business, a workbook may complement a course; for a food business, packaging may improve saleability. Test the addition before allowing it to distract from the core offer.</div>
+            </div>
+            <!-- 15 -->
+            <div class="characteristic-card">
+                <span class="char-number">#15</span>
+                <div class="char-title">Confidence in underserved markets</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He expresses confidence in Africa as an investment destination. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Examine overlooked customer groups with evidence rather than stereotypes. Compare the size of the unmet need with purchasing power, access, and delivery costs. Optimism becomes commercially useful when it directs disciplined investigation into opportunities others have missed.</div>
+            </div>
+            <!-- 16 -->
+            <div class="characteristic-card">
+                <span class="char-number">#16</span>
+                <div class="char-title">Awareness of the whole value chain</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes diversification across upstream and downstream activities. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Draw the route from inputs to the final customer. Identify where delays, waste, or lost margins occur. Improving one weak handoff may be more valuable than increasing output at a stage that already works well.</div>
+            </div>
+            <!-- 17 -->
+            <div class="characteristic-card">
+                <span class="char-number">#17</span>
+                <div class="char-title">Selective control of critical inputs</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">His backward-integration approach includes producing raw materials. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Identify the input most capable of interrupting your business. Compare owning production, using a long-term supply arrangement, and maintaining alternative suppliers. Choose the option justified by volume, expertise, and cost rather than assuming ownership is always best.</div>
+            </div>
+            <!-- 18 -->
+            <div class="characteristic-card">
+                <span class="char-number">#18</span>
+                <div class="char-title">Planning for unreliable infrastructure</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">His manufacturing businesses have generated their own electricity. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> List the services on which delivery depends, including power, water, internet, and transport. Estimate the effect of an outage and arrange a proportionate backup. The smallest effective safeguard may be preferable to an expensive system that is rarely needed.</div>
+            </div>
+            <!-- 19 -->
+            <div class="characteristic-card">
+                <span class="char-number">#19</span>
+                <div class="char-title">Treating logistics as strategic</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He identifies transport costs and border delays as trade barriers. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Measure the complete cost and elapsed time from supplier to customer. Include storage, spoilage, waiting, failed deliveries, and handling. Evaluate distribution options before committing to production volumes that your delivery system cannot reliably support.</div>
+            </div>
+            <!-- 20 -->
+            <div class="characteristic-card">
+                <span class="char-number">#20</span>
+                <div class="char-title">Taking responsibility for implementation</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes organizing refinery engineering, procurement, and construction. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Assign an owner to every major deliverable and maintain a visible list of dependencies. Even when specialists do the work, someone must coordinate the interfaces. Ask what evidence shows completion instead of accepting an activity report as proof of a finished result.</div>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 3: Finance and capital discipline ========== -->
+        <div class="section-title">
+            <span class="number-badge">03</span>
+            <h2>Finance &amp; capital discipline</h2>
+        </div>
+        <div class="characteristic-grid">
+            <!-- 21 -->
+            <div class="characteristic-card">
+                <span class="char-number">#21</span>
+                <div class="char-title">Reinvestment in productive capacity</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">A published profile describes reinvestment during his early expansion. <span class="footnote-ref">[5]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Create a written rule for distributing available surplus between reserves, essential personal needs, and business improvement. Reinvestment should address a documented bottleneck or opportunity. Avoid spending the surplus merely because expansion feels like progress.</div>
+            </div>
+            <!-- 22 -->
+            <div class="characteristic-card">
+                <span class="char-number">#22</span>
+                <div class="char-title">Prioritizing enterprise building over consumption</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes company building and charitable giving as major satisfactions. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Before a discretionary purchase, compare it with a specific improvement the same money could fund. Keep a reasonable personal budget. This is a discipline of deliberate allocation, not a requirement to deny yourself every comfort or imitate another person's lifestyle.</div>
+            </div>
+            <!-- 23 -->
+            <div class="characteristic-card">
+                <span class="char-number">#23</span>
+                <div class="char-title">Negotiating commercial terms</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">A group executive defended negotiating favorable prices and credit terms. <span class="footnote-ref">[6]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Compare offers on total cost, payment timing, reliability, and remedies for nonperformance. A low headline price can conceal expensive delays. Record important terms in writing and make sure both parties understand what must happen before payment is due.</div>
+            </div>
+            <!-- 24 -->
+            <div class="characteristic-card">
+                <span class="char-number">#24</span>
+                <div class="char-title">Respect for working capital</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">Reuters reported refinery startup constraints involving operating finance in 2024. <span class="footnote-ref">[6]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Prepare a rolling cash calendar showing when customers pay and suppliers require payment. Budget for running the operation after equipment is installed. A business can possess valuable assets and still be unable to fill its next order.</div>
+            </div>
+            <!-- 25 -->
+            <div class="characteristic-card">
+                <span class="char-number">#25</span>
+                <div class="char-title">Attention to currency exposure</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He discusses devaluation as a reason to diversify family wealth. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> List which receipts and expenses occur in different currencies. Test how an unfavorable exchange-rate movement changes your margin and cash requirement. Do not assume a profitable forecast in one currency remains profitable after conversion into another.</div>
+            </div>
+            <!-- 26 -->
+            <div class="characteristic-card">
+                <span class="char-number">#26</span>
+                <div class="char-title">Expectation of operating difficulties</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He says he entered manufacturing expecting problems to solve. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Before launch, identify three plausible disruptions and prepare an initial response for each. Include a named decision-maker and the information needed. Anticipating difficulty reduces surprise, but it should not become an excuse for ignoring an already unworkable plan.</div>
+            </div>
+            <!-- 27 -->
+            <div class="characteristic-card">
+                <span class="char-number">#27</span>
+                <div class="char-title">Diversification against business cycles</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He explains diversification partly through changing sector conditions. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Study whether a second income source actually reduces dependence on the first. Two products relying on the same customer budget may decline together. Expand only when the existing activity is sufficiently organized to avoid weakening both operations.</div>
+            </div>
+            <!-- 28 -->
+            <div class="characteristic-card">
+                <span class="char-number">#28</span>
+                <div class="char-title">Reassessment when partners withdraw</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">He recounts continuing a sugar project after a partner withdrew. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> If a partner exits, rebuild the budget and responsibilities before deciding whether to continue. Ask why the partner left and whether their information changes the opportunity. Independence is useful only when the remaining team can carry the obligations.</div>
+            </div>
+            <!-- 29 -->
+            <div class="characteristic-card">
+                <span class="char-number">#29</span>
+                <div class="char-title">Separating persistence from automatic expansion</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">His refinery experience includes both delivery and financing difficulties. <span class="footnote-ref">[4,6]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Agree in advance what evidence would justify continuing, reducing scope, pausing, or stopping. Keep the decision tied to prospective benefits and costs. Money already spent cannot by itself establish that the next expenditure is worthwhile.</div>
+            </div>
+            <!-- 30 -->
+            <div class="characteristic-card">
+                <span class="char-number">#30</span>
+                <div class="char-title">Acknowledging uncertainty and luck</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He acknowledges that luck contributed to his success. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Write down what you control and what you do not: customer response, policy changes, weather, timing, or supplier reliability. Preserve room to adapt. A successful outcome should not persuade you that every original assumption was correct.</div>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 4: People & organization ========== -->
+        <div class="section-title">
+            <span class="number-badge">04</span>
+            <h2>People &amp; organizational capability</h2>
+        </div>
+        <div class="characteristic-grid">
+            <!-- 31 -->
+            <div class="characteristic-card">
+                <span class="char-number">#31</span>
+                <div class="char-title">Investment in employee development</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">He describes establishing the Dangote Academy for workforce training. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> List the three skills most important to reliable delivery and assess who can perform them. Provide practical instruction and observe the work afterward. Training is successful when performance improves, not merely when someone attends a session.</div>
+            </div>
+            <!-- 32 -->
+            <div class="characteristic-card">
+                <span class="char-number">#32</span>
+                <div class="char-title">Combining technical and managerial competence</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">The academy addresses both technical and managerial capability. <span class="footnote-ref">[2]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Develop operating expertise alongside scheduling, communication, and supervision. A skilled technician may still need help leading a team. Conversely, a manager must understand enough of the work to recognize unrealistic targets and ask useful questions.</div>
+            </div>
+            <!-- 33 -->
+            <div class="characteristic-card">
+                <span class="char-number">#33</span>
+                <div class="char-title">Building a team beyond the founder</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">The group publishes distinct senior executive responsibilities. <span class="footnote-ref">[3]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Identify tasks that currently stop whenever you are unavailable. Document one recurring process and train a second person to complete it. Even a small venture can use part-time expertise and clear handovers to reduce dependence on the founder.</div>
+            </div>
+            <!-- 34 -->
+            <div class="characteristic-card">
+                <span class="char-number">#34</span>
+                <div class="char-title">Encouraging truthful reporting</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He says he wants people to tell him the truth. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Ask colleagues to bring bad news promptly, with facts and possible responses. Thank them for raising a real issue before discussing responsibility. If reporting a problem reliably brings humiliation, the organization will learn to conceal problems instead.</div>
+            </div>
+            <!-- 35 -->
+            <div class="characteristic-card">
+                <span class="char-number">#35</span>
+                <div class="char-title">Respect and teamwork</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">Dangote Cement lists respect, teamwork, and inclusion among cultural commitments. <span class="footnote-ref">[7]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Set clear standards for meetings, feedback, and shared work. Define responsibilities without treating people as interchangeable. Assess the culture through daily behavior, including how disagreements are handled and whose concerns receive a fair hearing.</div>
+            </div>
+            <!-- 36 -->
+            <div class="characteristic-card">
+                <span class="char-number">#36</span>
+                <div class="char-title">Collaboration around shared objectives</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He describes convening African business leaders around common development goals. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Identify collaborators whose capabilities complement yours and define a specific joint outcome. Start with a limited project and explicit responsibilities. A large contact list is less useful than a few relationships in which both sides deliver what they promise.</div>
+            </div>
+            <!-- 37 -->
+            <div class="characteristic-card">
+                <span class="char-number">#37</span>
+                <div class="char-title">Connecting ambition with financing partners</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">In the IFC discussion, he acknowledges institutional funding support. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Prepare a clear explanation of the customer, use of funds, milestones, risks, and reporting process. Seek partners suited to the project's stage and constraints. Do not assume that enthusiasm, a famous comparison, or a social mission substitutes for a credible operating case.</div>
+            </div>
+            <!-- 38 -->
+            <div class="characteristic-card">
+                <span class="char-number">#38</span>
+                <div class="char-title">Understanding the policy environment</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He discusses movement restrictions and barriers to regional trade. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> List the permissions and public systems your operation depends on. Verify requirements before making commitments. Maintain professional relationships with relevant institutions while keeping business decisions documented and avoiding dependence on personal access as the sole advantage.</div>
+            </div>
+            <!-- 39 -->
+            <div class="characteristic-card">
+                <span class="char-number">#39</span>
+                <div class="char-title">Deliberate brand building</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He explains advertising as a way to develop the Dangote brand. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Make your promise easy to understand and consistent across proposals, products, and customer support. Use evidence such as delivery records and customer feedback to support it. Promotion can introduce a business; dependable performance gives the name lasting meaning.</div>
+            </div>
+            <!-- 40 -->
+            <div class="characteristic-card">
+                <span class="char-number">#40</span>
+                <div class="char-title">Earning credibility through execution</div>
+                <div class="char-meta"><i class="fas fa-comment-dots"></i> Statement</div>
+                <div class="char-desc">He links his investment advocacy to demonstrating commitment with capital. <span class="footnote-ref">[4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Show a prospective partner something completed: a working prototype, a paid pilot, or a documented delivery. Describe limitations honestly. Evidence of a modest result often provides a firmer basis for trust than an impressive forecast without operating experience.</div>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 5: Values & social contribution ========== -->
+        <div class="section-title">
+            <span class="number-badge">05</span>
+            <h2>Values &amp; social contribution</h2>
+        </div>
+        <div class="characteristic-grid">
+            <!-- 41 -->
+            <div class="characteristic-card">
+                <span class="char-number">#41</span>
+                <div class="char-title">Connecting business with job creation</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">Local employment is part of the group's stated mission. <span class="footnote-ref">[3]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Consider what useful work your venture can sustain and what capabilities employees can gain. Add staff when the workload and economics support the role. Measure stable employment and skill development rather than making unsupported promises about future job numbers.</div>
+            </div>
+            <!-- 42 -->
+            <div class="characteristic-card">
+                <span class="char-number">#42</span>
+                <div class="char-title">Organized philanthropy</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">Published reporting describes his foundation and grants to vulnerable women. <span class="footnote-ref">[5]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Choose a defined social purpose and a contribution your resources can sustain. Record what is given and what result it supports. A small, consistent program with a clear beneficiary can be more useful than occasional public gestures without follow-through.</div>
+            </div>
+            <!-- 43 -->
+            <div class="characteristic-card">
+                <span class="char-number">#43</span>
+                <div class="char-title">Commitment to integrity as a standard</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">Integrity is a published group value and cement cultural commitment. <span class="footnote-ref">[3,7]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Make product claims accurate, disclose material limitations, and keep agreements understandable. Set procedures for gifts, conflicts of interest, and complaints. Published values become credible only when decisions are tested against them, especially when an easier shortcut appears profitable.</div>
+            </div>
+            <!-- 44 -->
+            <div class="characteristic-card">
+                <span class="char-number">#44</span>
+                <div class="char-title">Learning and advancement through merit</div>
+                <div class="char-meta"><i class="fas fa-building"></i> Corporate principle</div>
+                <div class="char-desc">Dangote Cement's cultural statement includes learning and meritocracy. <span class="footnote-ref">[7]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Use role requirements and demonstrated performance when selecting collaborators or allocating responsibility. State the standard before assessing people. Family ties, friendship, and confidence should not replace competence in tasks where errors impose costs on others.</div>
+            </div>
+            <!-- 45 -->
+            <div class="characteristic-card">
+                <span class="char-number">#45</span>
+                <div class="char-title">Pursuing a legacy beyond personal wealth</div>
+                <div class="char-meta"><i class="fas fa-chart-bar"></i> Record</div>
+                <div class="char-desc">He has publicly expressed a desire for philanthropic distinction. <span class="footnote-ref">[5]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Write the contribution you want your work to leave behind: useful services, trained people, reusable knowledge, or stronger community institutions. Select one measure of that contribution and review it alongside commercial results. A legacy becomes concrete through repeated choices.</div>
+            </div>
+            <!-- 46 -->
+            <div class="characteristic-card">
+                <span class="char-number">#46</span>
+                <div class="char-title">Distinguishing ambition from verified achievement</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">His interviews contain forward-looking goals as well as completed actions. <span class="footnote-ref">[1,4]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Label every statement in your proposal as an achieved result, an assumption, or a target. Give targets a date and an accountable owner. Update stakeholders when circumstances change rather than quietly presenting an old aspiration as an accomplished milestone.</div>
+            </div>
+            <!-- 47 -->
+            <div class="characteristic-card">
+                <span class="char-number">#47</span>
+                <div class="char-title">Balancing integration with financial flexibility</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">Control of production coexists with substantial operating funding needs. <span class="footnote-ref">[2,6]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Before buying another asset, compare ownership with a service contract or staged commitment. Calculate the cash that each option leaves available for operations. More control can create a stronger business, but it can also reduce the room to respond to surprises.</div>
+            </div>
+            <!-- 48 -->
+            <div class="characteristic-card">
+                <span class="char-number">#48</span>
+                <div class="char-title">Accepting scrutiny of market power</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">Independent reporting describes monopoly allegations that Dangote disputed. <span class="footnote-ref">[8]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Build advantages through service, efficiency, and quality. Invite questions about pricing and customer choice. An allegation is not a finding, but scrutiny is a foreseeable consequence of influence; a responsible business should be able to explain its conduct.</div>
+            </div>
+            <!-- 49 -->
+            <div class="characteristic-card">
+                <span class="char-number">#49</span>
+                <div class="char-title">Adapting principles to personal circumstances</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">His acknowledged family advantages complicate simple self-made success narratives. <span class="footnote-ref">[1]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Choose an application that fits your resources, experience, and available time. For a small enterprise, mastery, repeat customers, cash discipline, and a reliable assistant may matter more than owning facilities. Set milestones against your starting position rather than another person's scale.</div>
+            </div>
+            <!-- 50 -->
+            <div class="characteristic-card">
+                <span class="char-number">#50</span>
+                <div class="char-title">Learning from achievement and difficulty together</div>
+                <div class="char-meta"><i class="fas fa-search"></i> Interpretation</div>
+                <div class="char-desc">His record combines industrial delivery with publicly reported commercial obstacles. <span class="footnote-ref">[4,6]</span></div>
+                <div class="application"><strong><i class="fas fa-pen"></i> Practical application</strong> Review successes for repeatable causes and setbacks for correctable weaknesses. Keep a brief decision journal recording assumptions, actions, and results. The aim is to improve judgment over time, including the ability to recognize when a favored idea needs revision.</div>
+            </div>
+        </div>
+
+        <!-- Putting into practice / coach summary -->
+        <div style="background: #eef5fd; border-radius: 24px; padding: 2rem; margin-top: 2.5rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #0a2e4b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.7rem;"><i class="fas fa-compass" style="color: #1a4b6d;"></i> Putting the research into practice</h3>
+            <p style="margin-bottom: 1.2rem; color: #1e3b5a;">Begin with <strong>five characteristics</strong> rather than trying to change fifty habits at once. A useful initial selection is business understanding, focus, working-capital awareness, truthful reporting, and credibility through execution. Together they help answer whether the opportunity is understood, whether work is progressing, and whether the business can sustain delivery.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="flex: 1 1 200px; background: white; padding: 1rem 1.2rem; border-radius: 16px; border: 1px solid #d9e6f5;">
+                    <div style="font-weight: 700; color: #1a4b6d; margin-bottom: 0.3rem;">Days 1–7</div>
+                    <div style="font-size: 0.9rem;">Choose one venture and interview five prospective or existing customers. Write a one-page account of the need, current alternatives, buying decision, and expected delivery process.</div>
+                </div>
+                <div style="flex: 1 1 200px; background: white; padding: 1rem 1.2rem; border-radius: 16px; border: 1px solid #d9e6f5;">
+                    <div style="font-weight: 700; color: #1a4b6d; margin-bottom: 0.3rem;">Days 8–14</div>
+                    <div style="font-size: 0.9rem;">Map the operating process and cash timing. Identify the single weakest dependency and obtain realistic supplier quotations. Ask an experienced operator to challenge your assumptions.</div>
+                </div>
+                <div style="flex: 1 1 200px; background: white; padding: 1rem 1.2rem; border-radius: 16px; border: 1px solid #d9e6f5;">
+                    <div style="font-weight: 700; color: #1a4b6d; margin-bottom: 0.3rem;">Days 15–21</div>
+                    <div style="font-size: 0.9rem;">Deliver a small pilot or improve one existing offer. Record the actual time, cost, customer response, and difficulties. Keep the test affordable enough that an unsuccessful result does not threaten essential commitments.</div>
+                </div>
+                <div style="flex: 1 1 200px; background: white; padding: 1rem 1.2rem; border-radius: 16px; border: 1px solid #d9e6f5;">
+                    <div style="font-weight: 700; color: #1a4b6d; margin-bottom: 0.3rem;">Days 22–30</div>
+                    <div style="font-size: 0.9rem;">Compare the evidence with your original expectations. Decide whether to improve, repeat, expand, pause, or stop. Choose the next five characteristics only after you can demonstrate progress on the first set.</div>
+                </div>
+            </div>
+            <p style="font-size: 0.92rem; color: #2c5270;"><i class="fas fa-check-circle" style="color: #1a4b6d;"></i> <strong>Personal review method:</strong> For each selected characteristic, record one recent example of your behavior, one weakness, and one action with a deadline. Review weekly. If you use a score, treat it only as a personal reflection aid; this report does not provide a validated psychological scale or a predictor of financial success.</p>
+        </div>
+
+        <!-- Sources -->
+        <div class="source-section">
+            <h3><i class="fas fa-book"></i> Sources &amp; evidence base</h3>
+            <div class="source-list">
+                <div class="source-item"><span class="src-num">1</span><span class="src-text"><strong>PBS / David Rubenstein Show</strong> (Feb 17, 2021). Primary interview: knowledge, effort, focus, temperament, truthfulness, branding, currency, family background, luck.</span></div>
+                <div class="source-item"><span class="src-num">2</span><span class="src-text"><strong>McKinsey Quarterly</strong> (Jan 10, 2019). Leadership lessons from Africa’s trailblazers: industrial learning, integration, resilience, training, long-term thinking.</span></div>
+                <div class="source-item"><span class="src-num">3</span><span class="src-text"><strong>Dangote Industries Limited</strong> – About Us. Corporate source for business focus, values, transition to manufacturing, executive structure.</span></div>
+                <div class="source-item"><span class="src-num">4</span><span class="src-text"><strong>IFC Trendlines</strong> – “We Will Open Africa” conversation. Execution, logistics, collaboration, African-led investment, institutional financing.</span></div>
+                <div class="source-item"><span class="src-num">5</span><span class="src-text"><strong>The CEO Magazine</strong> (2018 profile). Reinvestment, connected businesses, philanthropic aims. Historical amounts not treated as settled facts.</span></div>
+                <div class="source-item"><span class="src-num">6</span><span class="src-text"><strong>Reuters via BOE Report</strong> (Apr 25, 2024). Stranded cargo and credit challenges at refinery; working-capital context.</span></div>
+                <div class="source-item"><span class="src-num">7</span><span class="src-text"><strong>Dangote Cement</strong> – Cultural webpage. Published commitments to respect, teamwork, inclusion, integrity, learning, meritocracy, governance.</span></div>
+                <div class="source-item"><span class="src-num">8</span><span class="src-text"><strong>Semafor</strong> (Jul 25, 2024). Independent context on disputes with regulators and suppliers; monopoly allegations treated as contested claims.</span></div>
+            </div>
+        </div>
+
+        <!-- Footer / branding -->
+        <div class="footer-note">
+            <div class="brand-stamp">
+                <div class="mini-icon"><i class="fas fa-chart-simple"></i></div>
+                <span>Business Coaching · Zaid Adib Ansari</span>
+            </div>
+            <div>
+                <i class="fas fa-shield-alt"></i> Research synthesis — not a psychological assessment or guarantee of wealth.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
